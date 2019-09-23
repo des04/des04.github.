@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet" />
+
+
+
+    <style>
+         #grad1 {
+            height: 1500px;
+            background-color: aqua;
+            background-image: linear-gradient(aqua,yellow,aqua);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Fredoka One", cursive;
+            font-size: 22px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: aqua;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: white;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: black;
+                    color: white;
+                }
+
+            .topnav .search-container {
+                float: right;
+            }
+
+            .topnav input[type=text] {
+                padding: 6px;
+                margin-top: 8px;
+                font-size: 17px;
+                border: none;
+            }
+
+            .topnav .search-container button {
+                float: right;
+                padding: 6px 10px;
+                margin-top: 8px;
+                margin-right: 16px;
+                background-color:aqua;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+
+                .topnav .search-container button:hover {
+                   background-color:aqua;
+                }
+
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+
+                .topnav a, .topnav input[type=text], .topnav .search-container button {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+
+    <title>Download</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a class="active" a href="downloadpage.html">Download</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i><img src="Images/searchicon.png" width="20 " height="20" /></button>
+            </form>
+        </div>
+    </div>
+
+
+    
+
+    <div id="grad1">
+
+
+        <br />
+        <h1>
+            <font size="60">
+                <center>
+                    Download
+                </center>
+
+            </font>
+
+        </h1>
+        <p>
+            <center>
+                This is a video about me dismantling most of a computer:
+                <br />
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/ItJb4VhRtI0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br />
+                <a href="https://www.youtube.com/embed/ItJb4VhRtI0" download>Download</a>
+                <br />
+                <br />
+                <br />
+                Sort of an intro to this website:
+                <br />
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/_LyqXmfEEGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br />
+                <a href="https://www.youtube.com/_LyqXmfEEGY" download>Download</a>
+            </center>
+        </p>
+    </div>
+</body>
+</html>
