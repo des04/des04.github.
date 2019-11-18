@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Extra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <meta charset="utf-8" />
+    <style>
+        
+        #focusExample:focus {
+            color:black;
+        }
+        #visitedExample:visited {
+            color:yellow;
+        }
+
+
+        #animationExample {
+            color:black;
+        }
+        #animationExample:hover {
+            animation: anim 4s;
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @keyframes anim {
+            0% 
+            {
+                transform:rotateY(0deg);
+                color:black;
+            }
+            50%
+            {
+                transform:rotateY(180deg);
+                color:aqua;
+            }
+            100% 
+            {
+                transform:rotateY(360deg);
+                color:black;
+            }
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+
+    <!--This div exists so that content always appears underneath the nav.-->
+    <div style="display:block; float:left; height:100%; width:100%;">
+        &nbsp;
+    </div>
+
+    <header>
+        <div class="box" style="width:70%; padding:1%; margin-top:10%; margin-bottom:5%;">
+            <h2>Extra stuff:</h2>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="box" style="width:90%; background-color:white; color:black;">
+            <h1>Cumulative Assessment</h1>
+            <p>
+                An example of the kind of work grade ten's do at PTEC
+                is this very site! This website's creator/designer
+                Des Langan made this web page as a submission for his
+                CSS cumulative assessment. He is also the one writing
+                this, so for the rest of this paragraph he will stop
+                refering to himself in the third person because it
+                feels a little weird. For this assignment I still need
+                to add some things, some examples would be spans and
+                focus selectors for anchors. If you have no idea
+                what a span or an anchor even is, dont worry. What I'm
+                going to do in this paragraph is implement everything
+                I still need to implement and explain how I learned
+                it at PTEC.
+            </p>
+            <h2>Spans</h2>
+            <p>
+                Spans are things people use to group inline elements
+                in a document. For example,
+                <span style="color:blueviolet">
+                    this text is different than the preceding text
+                    because it is within a span div that has stylized
+                    the text to be purple.
+                </span>
+                My class over at PTEC learned about spans a few weeks
+                ago via our grade ten software development teacher,
+                Mr. Hardman, explaining them with a PowerPoint about
+                spans behind him. He also had us do a few activities
+                related to spans so we understood why and how they
+                were used.
+            </p>
+            <h2>Selectors for Anchors</h2>
+            <p>
+                An anchor put very simply is a link. Now, a regular
+                default <a href="">link</a> (as you can see) looks
+                quite bland. So, using HTML and CSS at PTEC we were
+                taught how to stylize links to make them look much
+                more asthetically pleasing. An example of a stylized
+                set of links would be the links at the top of this
+                page in the nav bar. These links use the hover
+                attribute, but sadly, none of these links use
+                the focus for visited attributes. The focus
+                attribute allows for links to change colour while
+                being clicked. Here is an <a href="" id="focusExample">example</a>
+                of one that does this (you can tell because it changes
+                to aqua while being clicked). The visited attribute
+                does the same thing as the focus attribute, only
+                after the click happens. For example, have you ever
+                heard of a "visited link"? In google, whenever you've
+                already clicked a link, it'll be a different colour.
+                This is because it uses the visited attribute. Here
+                is an <a href="About.html" id="visitedExample">example</a>
+                that will turn yellow after you've visited the about
+                page / once it has been clicked.
+            </p>
+            <h2>Animations</h2>
+            <p>
+                Animations are everywhere on websites, from
+                asthetically pleasing loading screens to interactive
+                buttons. For me to get a good mark on this website,
+                I must include an animation that wasn't discussed in
+                class. So, here is my
+                <div id="animationExample">
+                    example.
+                </div>
+                (Hover over the word "example" for the animation to
+                commence.)
+            </p>
+
+        </div>
+
+    </main>
+
+    <nav>
+        <div class="topnav a">
+            <p>Pembina Trails Early College</p>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a class="active" a href="Extra.html">Extra</a>
+        </div>
+    </nav>
+
+</body>
+</html>

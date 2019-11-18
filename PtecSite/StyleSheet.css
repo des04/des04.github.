@@ -1,0 +1,161 @@
+﻿/*
+    The following code sets an image that covers the entire
+    screen and remains fixed as the background.
+*/
+body 
+{
+    background-image: url("images/homebackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*
+    The following code defines the top navigation bar positioning, text
+    alignment, text size, coloring, border design, and transition time.
+    It also places the nav bar options above everything else.
+*/
+.topnav a 
+{
+    z-index:999;
+    position: relative;
+    float:left;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background: #000000;
+    color: white;
+    padding: 3% 4.25%;
+    font-family: Arial;
+    font-size: 200%;
+    font-weight: bold;
+    border-radius: 0px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    margin: 0px;
+}
+
+
+/*
+    The following code allows for a transition to occur whenever the user
+    hovers over a link in the topnav. It does this by defining some empty
+    content that takes up the entire hight of the topnav option which then
+    increases it's width to the right
+*/
+.topnav a:before 
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    border-radius: 0%;
+    transition: all 0.3s ease;
+}
+        
+.topnav a:hover:before 
+{
+    width: 100%;
+}
+/*
+    This just allows the user to see what page they are currently on in the nav bar.
+*/
+.topnav a.active 
+{
+    color: #b200ff;
+}
+/*
+    This stylizes the paragraphs within my nav bar. As ridiculous as that may 
+    sound, I can explain. The text "Pembina Trails Early College" is text that
+    I want included in my nav, however, I don't want it to be a link. So, this
+    allows me to stylize unlinked words in my nav bar. It stylizes them to 
+    appear over top of everything else, to be on the left side of the screen,
+    to have aligned text, to have no text decoration, to have a black background
+    with white text, to have padding to allow nice spacing, and to have a 
+    specific set of possible fonts that are a curtain size and bolded.
+*/
+.topnav p
+{
+    z-index:999;
+    position: relative;
+    float:left;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background: #000000;
+    color: white;
+    padding: 3% 4.25%;
+    padding-right:17%;
+    font-family: Arial;
+    font-size: 200%;
+    font-weight: bold;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/*
+    The following code styles all of my regular box divs. Making them 
+    automaticaly have rounded corners, a purple background, a maximum
+    percentage of the screens width and height that they are allowed
+    to occupy, white centered Arial-font text with a font size of 200%,
+    no border, and 60% opacity.
+    
+*/
+.box {
+    float:left;
+    left:15%;
+    position: relative;
+    max-width:70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial;
+    font-size: 200%;
+    font-weight: bold;
+    border: none;
+    background: #b200ff;
+    opacity: 0.8;
+    color: white;
+    padding: 3%;
+    border-radius: 25px;
+}
+/*
+    The following code stylizes the nav bar to a further
+    degree, making the nav element automatically fixed to
+    a curtain spot on the screen, have a width of the entire
+    screen, and I guess clear anything that is to the right
+    of the nav as well as adding a bottom margin of 20%. (The
+    last two are kind of extra things I'm keeping just in case.)
+
+*/
+nav {
+    position:fixed;
+    width:100%;
+    margin-bottom:20%;
+    clear:right;
+}
+/*
+    This was an attempt of mine to make all words in paragraphs
+    have a full opacity, however it doesn't work.
+*/
+p 
+{
+    opacity:1;
+}
+/*
+    This was an attempt of mine to make all words in headings
+    have a full opacity, however it doesn't work.
+*/
+h1 
+{
+    opacity:1;
+}
+/*
+    This was an attempt of mine to make all words in headings
+    have a full opacity, however it doesn't work.
+*/
+h2 
+{
+    opacity:1;
+}
