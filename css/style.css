@@ -1,0 +1,36 @@
+* {
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+#search {
+  width: 50px;
+  height: 50px;
+  margin-top: 0.7vh;
+  margin-left: -4vw;
+  background: url("../Images/spritesheet.jpg") -227px -440px; }
+
+#menu {
+  margin-top: 1vh;
+  background: url("../Images/spritesheet.jpg") -80px -230px;
+  width: 60px;
+  height: 40px; }
+
+header {
+  background-color: black;
+  color: white; }
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 8.5vh;
+  background-color: white;
+  margin-top: -2.8vh;
+  color: #1c8799;
+  font-size: 8vh; }
+  nav div, nav p {
+    display: inline-block; }
+  nav div {
+    float: right;
+    margin-right: 6vw; }
+  nav p {
+    margin-top: -10vh; }
