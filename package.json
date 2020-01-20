@@ -1,14 +1,15 @@
 {
-  "name": "finalersite",
+  "name": "finalwebsite",
   "version": "1.0.0",
   "description": "sass",
   "main": "index.js",
   "scripts": {
-    "compile_sass": "node-sass sass/style.scss css/style.css -w"
+    "compile_sass":"node-sass sass/sass.scss css/css.css -w"
   },
   "author": "Dlangan",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.13.0"
-  }
+  },
+  "dependencies": {}
 }
